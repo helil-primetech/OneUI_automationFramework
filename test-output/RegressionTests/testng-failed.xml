@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [RegressionTests]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="Regression(failed)">
+    <classes>
+      <class name="tests.AmazonSearchTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="searchResultVerify"/>
+          <include name="amazonSearchTest"/>
+        </methods>
+      </class> <!-- tests.AmazonSearchTest -->
+      <class name="tests.SeleniumEasyAlertTests">
+        <methods>
+          <include name="secondAlertTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- tests.SeleniumEasyAlertTests -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [RegressionTests] -->
